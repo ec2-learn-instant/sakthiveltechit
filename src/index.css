@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-sans; /* Use the 'sans' font everywhere */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-display; /* Use display font for headings */
+}
