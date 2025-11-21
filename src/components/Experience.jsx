@@ -40,7 +40,7 @@ export default function Experience() {
     },
     {
       role: "Data Analyst",
-      company: "WiseAnalytics.io, India",
+      company: "WiseAnalytics.io",
       duration: "Oct 2022 - Mar 2024 (Contract)",
       summary:
         "Transformed raw datasets into actionable insights, enabling better decision-making through analytics and clear visual reports.",
