@@ -9,6 +9,8 @@ import Education from "./components/Education";
 import Contact from "./components/Contact";
 import OpenSource from "./components/OpenSource";
 import YoutubeSection from "./components/YoutubeSection";
+import LinkedInPost from "./components/LinkedInPost";
+
 import Footer from "./components/Footer";
 
 function App() {
@@ -27,6 +29,7 @@ function App() {
         <Skills />
         <Experience />
         <Education />
+        <LinkedInPost />
         <OpenSource />
         <YoutubeSection />
         {/* <Projects /> */}
