@@ -65,7 +65,7 @@ export default function LibrariesSection() {
               key={index}
               className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition"
             >
-              <h3 className="text-lg font-semibold">{lib.name}</h3>
+              <h3 className="text-lg text-gray-800 dark:text-gray-200 font-semibold">{lib.name}</h3>
               <p className="text-gray-600 text-sm mt-1">{lib.description}</p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-sm">
