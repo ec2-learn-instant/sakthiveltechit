@@ -36,7 +36,8 @@ export default function About() {
 
 
           {/* Description */}
-          <p className="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed px-0 sm:px-8">
+         <p class="mt-3 text-gray-700 dark:text-gray-300 leading-relaxed px-0 sm:px-8 
+   text-sm sm:text-sm md:text-base lg:text-lg">
             Full Stack Engineer with 6+ years of experience architecting and
             developing scalable web applications, distributed event-driven
             systems, and real-time data dashboards for both startups and

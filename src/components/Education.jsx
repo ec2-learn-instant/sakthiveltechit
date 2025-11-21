@@ -12,7 +12,7 @@ export default function Education() {
       duration: "2014 - 2018",
       details: (
         <>
-          <p>CGPA: <strong>3.75 out of 4.00</strong></p>
+          <p>CGPA: <strong>8 out 0f 10</strong></p>
           <p>Department: Computer Science & Engineering</p>
         </>
       ),
@@ -23,7 +23,7 @@ export default function Education() {
       duration: "2012 - 2014",
       details: (
         <>
-          <p>CGPA: <strong>84% out of 100%</strong></p>
+          <p>CGPA: <strong>84% out of 100</strong></p>
           <p>Department: Mathematics and Biology</p>
         </>
       ),
