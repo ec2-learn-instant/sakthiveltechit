@@ -7,6 +7,8 @@ import Experience from "./components/Experience";
 import Projects from "./components/Projects";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
+import OpenSource from "./components/OpenSource";
+import YoutubeSection from "./components/YoutubeSection";
 import Footer from "./components/Footer";
 
 function App() {
@@ -25,6 +27,8 @@ function App() {
         <Skills />
         <Experience />
         <Education />
+        <OpenSource />
+        <YoutubeSection />
         {/* <Projects /> */}
         <Contact />
       </main>

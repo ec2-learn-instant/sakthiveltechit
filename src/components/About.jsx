@@ -33,6 +33,9 @@ export default function About() {
         <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
   Sakthivel Govinthan
 </h2>
+<p className="text-sm sm:text-base md:text-lg text-blue-600 dark:text-blue-400 font-semibold mt-1">
+  Full Stack Developer
+</p>
 
 
           {/* Description */}

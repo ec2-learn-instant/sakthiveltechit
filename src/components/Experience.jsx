@@ -79,7 +79,7 @@ export default function Experience() {
 
                 {/* Role + Company Right */}
                 <div className="text-left sm:text-left">
-                  <div className="text-md md:text-base lg:text-lg font-bold text-gray-700 dark:text-gray-300">
+                  <div className="text-lg md:text-base lg:text-lg font-bold text-gray-700 dark:text-gray-300">
                     {exp.role}
                   </div>
                   <div className="text-gray-600 dark:text-gray-400 text-sm">
