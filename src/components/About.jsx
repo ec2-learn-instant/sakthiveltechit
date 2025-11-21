@@ -30,7 +30,7 @@ export default function About() {
         {/* Content Wrapper */}
         <div className="mt-4 text-left md:text-center">
           {/* Name */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 dark:text-gray-300">
+        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
   Sakthivel Govinthan
 </h2>
 

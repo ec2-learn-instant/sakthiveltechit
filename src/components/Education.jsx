@@ -9,7 +9,7 @@ export default function Education() {
     {
       degree: "Bachelor of Technology (B.Tech) - Information Technology",
       institution: "KSR College of Technology",
-      duration: "2015 - 2019",
+      duration: "2014 - 2018",
       details: (
         <>
           <p>CGPA: <strong>3.75 out of 4.00</strong></p>
@@ -19,23 +19,23 @@ export default function Education() {
     },
     {
       degree: "Higher Secondary Certificate (HSC)",
-      institution: "Cantonment College, Jessore",
+      institution: "Sri Vidhya Mandir School",
       duration: "2012 - 2014",
       details: (
         <>
-          <p>CGPA: <strong>3.75 out of 4.00</strong></p>
-          <p>Department: Computer Science & Engineering</p>
+          <p>CGPA: <strong>84% out of 100%</strong></p>
+          <p>Department: Mathematics and Biology</p>
         </>
       ),
     },
     {
       degree: "Secondary School Certificate (SSC)",
-      institution: "Chowgacha Shahadat Pilot High School",
+      institution: "Sri Vidhya Mandir School",
       duration: "2010 - 2012",
       details: (
         <>
-          <p>CGPA: <strong>3.75 out of 4.00</strong></p>
-          <p>Department: Computer Science & Engineering</p>
+          <p>CGPA: <strong>82% out of 100</strong></p>
+          {/* <p>Department: Computer Science</p> */}
         </>
       ),
     },
@@ -92,7 +92,7 @@ export default function Education() {
 
             {/* Accordion Body */}
             {openIndex === index && (
-              <div className="px-4 pb-4 text-gray-700 dark:text-gray-300 space-y-1">
+              <div className="px-4 pb-4 text-gray-700 dark:text-gray-300 space-y-1 text-sm">
                 {edu.details}
               </div>
             )}

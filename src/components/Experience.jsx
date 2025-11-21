@@ -118,7 +118,7 @@ export default function Experience() {
 
                   <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-1">
                     {exp.responsibilities.map((res, i) => (
-                      <li key={i}>{res}</li>
+                      <li className="text-sm text-gray-600 dark:text-gray-400" key={i}>{res}</li>
                     ))}
                   </ul>
                 </motion.div>

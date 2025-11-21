@@ -14,9 +14,9 @@ export default function Header({ darkMode, setDarkMode }) {
     <header className="fixed top-0 left-0 w-full bg-white dark:bg-gray-800 shadow-md py-4 z-50">
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
         {/* LEFT — NAME */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-700 dark:text-gray-300">
-          Sakthivel Govinthan
-        </h2>
+        <h2 className="text-md sm:text-xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
+  Sakthivel Govinthan
+</h2>
 
         {/* DESKTOP MENU */}
         <nav className="hidden md:flex items-center space-x-6">
