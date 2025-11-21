@@ -68,7 +68,7 @@ export default function Education() {
               <div className="flex items-center gap-4 w-full md:w-auto">
                 <LuGraduationCap className="hidden md:block text-gray-600 text-3xl" />
                 <div className="flex flex-col md:flex-row md:items-center md:gap-4 w-full justify-between">
-                  <div className="text-lg font-bold text-gray-700 dark:text-gray-300">
+                  <div className="text-md md:text-base lg:text-lg font-bold text-gray-700 dark:text-gray-300">
                     {edu.degree}
                   </div>
                   <div className="text-gray-600 dark:text-gray-400 text-sm mt-1 md:mt-0">
