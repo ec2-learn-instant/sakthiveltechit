@@ -105,14 +105,14 @@ export default function Contact() {
             <div className="space-y-4 mt-6">
               <div className="flex items-start space-x-3">
                 <FiMapPin className="text-gray-500 mt-1" size={22} />
-                <p className="text-gray-700 dark:text-gray-300">
+                <p className="text-gray-700 dark:text-gray-400">
                   Salem, Tamilnadu, India
                 </p>
               </div>
 
               <div className="flex items-start space-x-3">
                 <FiMail className="text-gray-500 mt-1" size={22} />
-                <p className="text-gray-700 dark:text-gray-500">
+                <p className="text-gray-700 dark:text-gray-400">
                   sakthiveltech@gmail.com
                 </p>
               </div>
