@@ -14,7 +14,7 @@ const libraries = [
     name: "random-hex-color-generator",
     description: "Generate random hex colors instantly for UI and testing.",
     tags: ["JavaScript", "Utility"],
-    github: "https://github.com/trackpilots/random-hex-color-generator",
+    github: "https://github.com/Sakthivelgovindan/random-hex-color-generator",
     npm: "https://www.npmjs.com/package/random-hex-color-generator",
     installNpm: "npm install random-hex-color-generator",
     installYarn: "yarn add random-hex-color-generator",
