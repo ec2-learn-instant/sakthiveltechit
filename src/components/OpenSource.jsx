@@ -50,7 +50,7 @@ const libraries = [
 
 export default function LibrariesSection() {
   return (
-    <section className="bg-gray-50" id="libraries">
+    <section className="" id="libraries">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-6">
           <h2 className="text-2xl font-bold">Open-Source Libraries</h2>
@@ -100,14 +100,14 @@ export default function LibrariesSection() {
               {/* Install commands */}
               <div className="mt-4">
                 <p className="text-xs font-semibold text-gray-500 mb-1">NPM:</p>
-                <code className="block bg-gray-100 p-2 rounded text-xs overflow-x-auto">
+                <code className="block text-gray-800 dark:text-gray-200  bg-gray-100 p-2 rounded text-xs overflow-x-auto">
                   {lib.installNpm}
                 </code>
 
                 <p className="text-xs font-semibold text-gray-500 mt-3 mb-1">
                   Yarn:
                 </p>
-                <code className="block bg-gray-100 p-2 rounded text-xs overflow-x-auto">
+                <code className="block text-gray-800 dark:text-gray-200 bg-gray-100 p-2 rounded text-xs overflow-x-auto">
                   {lib.installYarn}
                 </code>
               </div>
