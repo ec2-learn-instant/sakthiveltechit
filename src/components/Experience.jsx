@@ -1,6 +1,5 @@
 import { motion, AnimatePresence } from "framer-motion";
-import { LuBriefcase } from "react-icons/lu";
-import { LuChevronDown, LuChevronUp } from "react-icons/lu";
+import { LuBriefcase, LuChevronDown, LuChevronUp } from "react-icons/lu";
 import { useState } from "react";
 
 export default function Experience() {
@@ -54,12 +53,12 @@ export default function Experience() {
   ];
 
   return (
-    <section className="scroll-mt-32" id="experience">
-              <div className="text-center mb-6">
-      <h2 className="text-2xl font-bold text-center">Work Experience</h2>
-      <p className="text-center text-gray-600 dark:text-gray-400 mt-1">
-        My professional journey in software engineering and technology
-      </p>
+    <section className="scroll-mt-32 px-4 md:px-0" id="experience">
+      <div className="text-center mb-6">
+        <h2 className="text-2xl font-bold text-center">Work Experience</h2>
+        <p className="text-center text-gray-600 dark:text-gray-400 mt-1">
+          My professional journey in software engineering and technology
+        </p>
       </div>
 
       <div className="space-y-4">
@@ -70,24 +69,27 @@ export default function Experience() {
           >
             {/* Accordion Header */}
             <button
-              className="w-full flex items-center justify-between p-4 text-left"
+              className="w-full flex flex-col sm:flex-row sm:items-center justify-between p-4 text-left"
               onClick={() => setOpenIndex(openIndex === index ? null : index)}
             >
-              <h3 className="flex items-center gap-4">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-2 sm:gap-4">
                 {/* Icon Left */}
-                <LuBriefcase className="text-gray-600 text-3xl min-w-[32px]" />
+              <LuBriefcase className="hidden md:block text-gray-600 dark:text-gray-300 text-3xl min-w-[32px]" />
+
 
                 {/* Role + Company Right */}
-                <div>
-                  <div className="text-xl font-bold text-gray-700 dark:text-gray-300">{exp.role}</div>
+                <div className="text-left sm:text-left">
+                  <div className="text-xl font-bold text-gray-700 dark:text-gray-300">
+                    {exp.role}
+                  </div>
                   <div className="text-gray-600 dark:text-gray-400 text-sm">
                     {exp.company}
                   </div>
                 </div>
-              </h3>
+              </div>
 
               {/* Duration + Up/Down Icon */}
-              <div className="flex items-center gap-3">
+              <div className="flex items-center gap-2 mt-2 sm:mt-0">
                 <span className="text-gray-700 dark:text-gray-300 font-medium whitespace-nowrap">
                   {exp.duration}
                 </span>
