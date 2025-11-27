@@ -1,15 +1,20 @@
 import { useState } from "react";
 import Header from "./components/Header";
+import NewHeader from "./components/NewHeader";
 import Sidebar from "./components/Sidebar";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Experience from "./components/Experience";
+import NewExperience from "./components/NewExperience";
 import Projects from "./components/Projects";
+import NewProject from "./components/NewProject";
+import NewEducation from "./components/NewEducation";
 import Education from "./components/Education";
 import Contact from "./components/Contact";
 import OpenSource from "./components/OpenSource";
 import YoutubeSection from "./components/YoutubeSection";
 import LinkedInPost from "./components/LinkedInPost";
+import NewAchievements from "./components/NewAchievements";
 
 import Footer from "./components/Footer";
 
@@ -22,13 +27,18 @@ function App() {
         darkMode ? "dark bg-gray-900 text-gray-100" : "bg-gray-50 text-gray-900"
       }
     >
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+      {/* <Header darkMode={darkMode} setDarkMode={setDarkMode} /> */}
+      <NewHeader />
 
       <main className="max-w-5xl mx-auto px-4 py-8 space-y-20 mt-20">
-        <About />
+        {/* <About /> */}
         <Skills />
-        <Experience />
-        <Education />
+        {/* <Experience /> */}
+        <NewExperience />
+        <NewAchievements />
+        <NewProject />
+        <NewEducation />
+        {/* <Education /> */}
         <LinkedInPost />
         <OpenSource />
         <YoutubeSection />

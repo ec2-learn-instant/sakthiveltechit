@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html { scroll-behavior: smooth; }
+
+
 body {
   @apply font-sans; /* Use the 'sans' font everywhere */
 }

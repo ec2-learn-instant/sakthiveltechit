@@ -87,7 +87,8 @@ export default function Contact() {
         </p>
       </div>
 
-      <div className="border border-gray-300 dark:border-gray-700 rounded-xl p-6 md:p-10">
+
+      <div className="border-pink-300 border border-gray-300 dark:border-gray-700 rounded-xl p-6 md:p-10">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
           {/* LEFT SIDE */}
@@ -185,13 +186,20 @@ export default function Contact() {
 
             {/* BUTTON */}
             <button
-              type="submit"
-              disabled={status === "loading"}
-              className="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 rounded-lg transition disabled:opacity-60"
-            >
-              {status === "loading" ? "Sending..." : <><FiSend size={18} /> Send Message</>}
-            </button>
-
+  type="submit"
+  disabled={status === "loading"}
+  className="
+    w-full flex items-center justify-center gap-2
+    px-6 py-3 rounded-full font-medium text-white
+    bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400
+    shadow-lg shadow-purple-500/30
+    hover:shadow-xl hover:shadow-purple-500/50
+    transition-all duration-300
+    disabled:opacity-60
+  "
+>
+  {status === "loading" ? "Sending..." : <><FiSend size={18} /> Send Message</>}
+</button>
             {/* SUCCESS */}
             {status === "success" && (
               <p className="text-green-500 text-center font-medium">✅ Thank you! Your message has been sent.</p>

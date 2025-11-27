@@ -14,7 +14,7 @@ export default function About() {
         className="relative bg-white dark:bg-gray-800 shadow-lg rounded-2xl p-8 pt-20 w-full"
       >
         {/* Profile Image */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
@@ -25,17 +25,17 @@ export default function About() {
             alt="Your Profile"
             className="w-32 h-32 rounded-full object-cover border-4 border-blue-500 shadow-md"
           />
-        </motion.div>
+        </motion.div> */}
 
         {/* Content Wrapper */}
         <div className="mt-4 text-left md:text-center">
           {/* Name */}
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
+        {/* <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-700 dark:text-gray-300">
   Sakthivel Govinthan
 </h2>
 <p className="text-sm sm:text-base md:text-lg text-blue-600 dark:text-blue-400 font-semibold mt-1">
   Full Stack Engineer
-</p>
+</p> */}
 
 
           {/* Description */}

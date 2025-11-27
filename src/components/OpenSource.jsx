@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { motion } from "framer-motion";
 
 const libraries = [
   {
@@ -49,30 +50,71 @@ const libraries = [
 ];
 
 export default function LibrariesSection() {
+  const container = {
+    hidden: { opacity: 0 },
+    show: { opacity: 1, transition: { staggerChildren: 0.1 } },
+  };
+
+  const item = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <section className="" id="libraries">
+    <section id="libraries" className="py-16">
       <div className="max-w-6xl mx-auto px-6">
-        <div className="text-center mb-6">
-          <h2 className="text-2xl font-bold">Open-Source Libraries</h2>
-          <p className="text-gray-600 dark:text-gray-400 mt-1">
+
+        {/* Heading */}
+        <motion.div
+          className="text-center mb-6"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <h2 className="text-2xl font-bold text-gray-900">
+            Open-Source Libraries
+          </h2>
+          <p className="text-gray-600 mt-1">
             Reusable and production-ready UI components.
           </p>
-        </div>
+        </motion.div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Divider */}
+        <motion.div
+          className="w-full h-[2px] bg-gradient-to-r from-pink-300 via-pink-200 to-yellow-200 mb-6"
+          initial={{ width: 0 }}
+          whileInView={{ width: "100%" }}
+          transition={{ duration: 0.7 }}
+          viewport={{ once: true }}
+        />
+
+        {/* Libraries Grid */}
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          variants={container}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true }}
+        >
           {libraries.map((lib, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-white rounded-2xl shadow-md p-6 hover:shadow-xl transition"
+              variants={item}
+              className="bg-white dark:bg-gray-800 rounded-2xl shadow-md p-6 hover:shadow-xl transition border-2 border-transparent hover:border-gradient-to-r hover:from-pink-300 hover:via-pink-200 hover:to-yellow-200"
             >
-              <h3 className="text-lg text-gray-800 dark:text-gray-200 font-semibold">{lib.name}</h3>
-              <p className="text-gray-600 text-sm mt-1">{lib.description}</p>
+              <h3 className="text-lg font-semibold text-gray-900 dark:text-gray-100">
+                {lib.name}
+              </h3>
+              <p className="text-gray-700 dark:text-gray-300 text-sm mt-1">
+                {lib.description}
+              </p>
 
               <div className="mt-4 flex flex-wrap gap-2 text-sm">
                 {lib.tags.map((tag, i) => (
                   <span
                     key={i}
-                    className="px-3 py-1 bg-blue-100 text-blue-600 rounded-full"
+                    className="px-3 py-1 rounded-full text-white font-medium bg-gray-600 hover:bg-gray-800 shadow-sm shadow-black/30 transition-all duration-300 flex items-center gap-2"
                   >
                     {tag}
                   </span>
@@ -84,14 +126,14 @@ export default function LibrariesSection() {
                 <a
                   href={lib.github}
                   target="_blank"
-                  className="text-blue-600 hover:underline text-sm"
+                  className="text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 hover:underline transition-all duration-300"
                 >
                   GitHub →
                 </a>
                 <a
                   href={lib.npm}
                   target="_blank"
-                  className="text-blue-600 hover:underline text-sm"
+                  className="text-sm font-medium text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-orange-400 hover:underline transition-all duration-300"
                 >
                   NPM →
                 </a>
@@ -100,20 +142,18 @@ export default function LibrariesSection() {
               {/* Install commands */}
               <div className="mt-4">
                 <p className="text-xs font-semibold text-gray-500 mb-1">NPM:</p>
-                <code className="block text-gray-800 dark:text-gray-200  bg-gray-100 p-2 rounded text-xs overflow-x-auto">
+                <code className="block text-gray-800 dark:text-gray-200 bg-gray-100 p-2 rounded text-xs overflow-x-auto">
                   {lib.installNpm}
                 </code>
 
-                <p className="text-xs font-semibold text-gray-500 mt-3 mb-1">
-                  Yarn:
-                </p>
+                <p className="text-xs font-semibold text-gray-500 mt-3 mb-1">Yarn:</p>
                 <code className="block text-gray-800 dark:text-gray-200 bg-gray-100 p-2 rounded text-xs overflow-x-auto">
                   {lib.installYarn}
                 </code>
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

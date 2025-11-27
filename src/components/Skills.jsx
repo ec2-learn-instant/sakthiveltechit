@@ -66,6 +66,16 @@ export default function Skills() {
           Technologies and tools I work with
         </p>
       </div>
+      
+      {/* Divider */}
+      <motion.div
+        className="w-full h-[2px] bg-gradient-to-r from-pink-300 via-pink-200 to-yellow-200 mb-6"
+        initial={{ width: 0 }}
+        whileInView={{ width: "100%" }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+      />
+
 
       <div className="grid md:grid-cols-2 gap-6">
         {categories.map((cat) => (
