@@ -1,70 +1,81 @@
-# Getting Started with Create React App
+# Sakthivel Govinthan — Portfolio Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Personal portfolio site built to showcase skills, education, work-experience, projects, and social links.
 
-## Available Scripts
+## 🧑‍💻 About
 
-In the project directory, you can run:
+This is my personal portfolio website where I share my background as a full-stack engineer, professional experience, education, open-source contributions, and projects.  
+It acts both as a résumé and a live portfolio to help potential employers or collaborators get a holistic view of my technical journey.
 
-### `npm start`
+## 🌐 Live Demo
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+[Visit Live Site →](https://sakthiveltechit.vercel.app)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 📂 Features
 
-### `npm test`
+- Responsive design — works across desktop and mobile  
+- Light / dark mode support  
+- Sections: Hero / Profile, Education, Work Experience, Projects, Open-Source Libraries, YouTube playlists / content, Contact / social links  
+- Clean component-based React + Tailwind UI with animations (via Framer Motion) for scroll-in effects  
+- Easy to extend — add more projects, experiences, or content with minimal code duplication  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+- **Frontend Framework:** React (Next.js or Create React App — as used)  
+- **Styling:** Tailwind CSS, custom gradients and themes  
+- **Animations:** Framer Motion  
+- **Icons:** React Icons (Ai*, Fi*, etc.)  
+- **Deployments:** Vercel (or any static site host)  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📁 Project Structure (approximate)
+/public ── Static assets, images, icons
+/src / components ── React components for Banner, Education, Experience, Projects, etc.
+/pages or App ── Main layout, routing (if Next.js), or SPA entry point
+/styles / tailwind.config.js ── Tailwind / global styles and theme setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✅ Getting Started (Local Setup)
 
-### `npm run eject`
+```bash
+# 1. Clone the repository
+git clone https://github.com/your-username/your-repo.git
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# 2. Go into project folder
+cd your-repo
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# 3. Install dependencies
+npm install   # or yarn install
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# 4. Start dev server
+npm run dev   # or yarn dev
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# 5. Build for production
+npm run build # or yarn build
 
-## Learn More
+# 6. Preview locally (if using Next.js)
+npm start     # or yarn start
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Then open http://localhost:3000 in your browser to view the portfolio locally.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+✨ Customization Guide
 
-### Code Splitting
+Add a project / work-experience / education entry: Duplicate the relevant component (e.g. ProjectsSection / WorkExperienceCard / Education) and add a new object to its data array.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Change theme or colors: Tailwind config + CSS classes — gradients, dark/light modes — easy to tweak.
 
-### Analyzing the Bundle Size
+Add new sections: You can add more React components to introduce blogs, testimonials, certifications, etc.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📬 Contact & Socials
 
-### Making a Progressive Web App
+Email: sakthiveltechit@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Phone: +91-8667695017
 
-### Advanced Configuration
+LinkedIn, GitHub, YouTube, personal site — all linked from the banner/social section of the website
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+📄 License & Usage
 
-### Deployment
+This project is open for personal or professional use. Feel free to fork, modify or distribute (MIT/ISC or as per your preference).
+If you find bugs or want to suggest improvements — feel free to open an issue or PR.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Made with ❤️ by Sakthivel Govinthan — Backend / Full-Stack Engineer.
